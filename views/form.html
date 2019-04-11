@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Validation</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="./css/form.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+        <div class="col-md-12 col-sm-6 col-xs-12">
+            <div class="panel panel-default">
+                <div class="panel-heading clearfix">
+                    <h3 class="panel-title">Form Fields</h3>
+                </div>
+            
+                <div class="panel-body">
+                    <div class="form-horizontal row-border">
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">case id</label>
+                        <div class="col-md-8">
+                        <input type="text" name="case_id" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">cvrnr</label>
+                        <div class="col-md-8">
+                        <input type="text" name="cvrnr" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">reporting period start date</label>
+                        <div class="col-md-8">
+                        <input type="date" name="reportingperiodstartdate" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">reporting period end date</label>
+                        <div class="col-md-8">
+                        <input type="date" name="reportingperiodenddate" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">date of approval of annual report</label>
+                        <div class="col-md-8">
+                        <input type="date" name="dateofapprovalofannualreport" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">date of general meeting</label>
+                        <div class="col-md-8">
+                        <input type="date" name="dateofgeneralmeeting" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">information on type of submitted report</label>
+                        <div class="col-md-8">
+                        <select name="informationontypeofsubmittedreport" class="form-control">
+                        </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">type of auditor assistance</label>
+                        <div class="col-md-8">
+                        <select name="typeofauditorassistance" class="form-control">
+                            <option></option>
+                            <option>AUDITOR'S REPORT</option>
+                            <option>AUDITOR'S REPORT (OTHER NON-ASSURANCE REPORTS)</option>
+                            <option>NO AUDITOR ASSISTANCE</option>
+                            <option>THE INDEPENDENT AUDITOR'S REPORT (REVIEW)</option>
+                            <option>AUDITOR'S REPORT ON EXTENDED REVIEW</option>
+                        </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">class of reporting entity</label>
+                        <div class="col-md-8">
+                        <select name="classofreportingentity" class="form-control">
+                            <option></option>
+                            <option>REPORTING CLASS A</option>
+                            <option>REPORTING CLASS B</option>
+                            <option>REPORTING CLASS C</option>
+                            <option>REPORTING CLASS D</option>
+                        </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">indentification number cvr of auditfirm</label>
+                        <div class="col-md-8">
+                        <input type="text" name="indentificationnumbercvrofauditfirm" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">description of auditor</label>
+                        <div class="col-md-8">
+                        <input type="text" name="descriptionofauditor" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">name and surname of auditor</label>
+                        <div class="col-md-8">
+                        <input type="text" name="nameandsurnameofauditor" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">audtiors opinion</label>
+                        <div class="col-md-8">
+                        <input type="text" name="audtiors_opinion" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">audtiors description</label>
+                        <div class="col-md-8">
+                        <input type="text" name="audtiors_description" class="form-control">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">auditors statement on management review</label>
+                        <div class="col-md-8">
+                        <input type="text" name="auditors_statement_on_management_review" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">responsibility management</label>
+                        <div class="col-md-8">
+                        <input type="text" name="responsibility_management" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">responsibility auditor</label>
+                        <div class="col-md-8">
+                        <input type="text" name="responsibility_auditor" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">auditor comments</label>
+                        <div class="col-md-8">
+                        <input type="text" name="auditor_comments" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">management review</label>
+                        <div class="col-md-8">
+                        <input type="text" name="management_review" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">name of financial institution</label>
+                        <div class="col-md-8">
+                        <input type="text" name="name_of_financial_institution" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">name of law firm</label>
+                        <div class="col-md-8">
+                        <input type="text" name="name_of_law_firm" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">average number of employees</label>
+                        <div class="col-md-8">
+                        <input type="text" name="averagenumberofemployees" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">IFRS</label>
+                        <div class="col-md-8 text-center ifrs_cbk">
+                        <input type="checkbox" name="ifrs">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">unit</label>
+                        <div class="col-md-8">
+                        <input type="text" name="unit" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">number scale</label>
+                        <div class="col-md-8">
+                        <select name="number_scale" class="form-control">
+                            <option>1E0</option>
+                            <option>1E3</option>
+                            <option>1E6</option>
+                            <option>1E9</option>
+                        </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">revenue</label>
+                        <div class="col-md-8">
+                        <input type="text" name="revenue" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">other income</label>
+                        <div class="col-md-8">
+                        <input type="text" name="other_income" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">costs</label>
+                        <div class="col-md-8">
+                        <input type="text" name="costs" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">gross result</label>
+                        <div class="col-md-8">
+                        <input type="text" name="gross_result" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">operating costs</label>
+                        <div class="col-md-8">
+                        <input type="text" name="operating_costs" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">other operating income</label>
+                        <div class="col-md-8">
+                        <input type="text" name="other_operating_income" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">staff expenses</label>
+                        <div class="col-md-8">
+                        <input type="text" name="staff_expenses" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">EBITDA</label>
+                        <div class="col-md-8">
+                        <input type="text" name="ebitda" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">depreciation</label>
+                        <div class="col-md-8">
+                        <input type="text" name="depreciation" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">EBIT</label>
+                        <div class="col-md-8">
+                        <input type="text" name="ebit" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">interest income</label>
+                        <div class="col-md-8">
+                        <input type="text" name="interest_income" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">interest expenses</label>
+                        <div class="col-md-8">
+                        <input type="text" name="interest_expenses" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">other net financial income</label>
+                        <div class="col-md-8">
+                        <input type="text" name="other_net_financial_income" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">net financial income</label>
+                        <div class="col-md-8">
+                        <input type="text" name="net_financial_income" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">ordinary profit</label>
+                        <div class="col-md-8">
+                        <input type="text" name="ordinary_profit" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">extraordinary item</label>
+                        <div class="col-md-8">
+                        <input type="text" name="extraordinary_item" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">profit loss before tax</label>
+                        <div class="col-md-8">
+                        <input type="text" name="profit_loss_before_tax" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">tax expenses</label>
+                        <div class="col-md-8">
+                        <input type="text" name="tax_expenses" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">profit loss</label>
+                        <div class="col-md-8">
+                        <input type="text" name="profit_loss" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">goodwill</label>
+                        <div class="col-md-8">
+                        <input type="text" name="goodwill" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">other intangible assets</label>
+                        <div class="col-md-8">
+                        <input type="text" name="other_intangible_assets" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">intangible assets</label>
+                        <div class="col-md-8">
+                        <input type="text" name="intangible_assets" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">land and buildings</label>
+                        <div class="col-md-8">
+                        <input type="text" name="land_and_buildings" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">plant equipment and fixtures</label>
+                        <div class="col-md-8">
+                        <input type="text" name="plant_equipment_and_fixtures" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">other property plant and equipment</label>
+                        <div class="col-md-8">
+                        <input type="text" name="other_property_plant_and_equipment" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">property plant and equipment</label>
+                        <div class="col-md-8">
+                        <input type="text" name="property_plant_and_equipment" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">noncurrent receivables</label>
+                        <div class="col-md-8">
+                        <input type="text" name="noncurrent_receivables" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">noncurrent investments</label>
+                        <div class="col-md-8">
+                        <input type="text" name="noncurrent_investments" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">other noncurrent financial assets</label>
+                        <div class="col-md-8">
+                        <input type="text" name="other_noncurrent_financial_assets" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">noncurrent financial assets</label>
+                        <div class="col-md-8">
+                        <input type="text" name="noncurrent_financial_assets" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">noncurrent assets</label>
+                        <div class="col-md-8">
+                        <input type="text" name="noncurrent_assets" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">inventories</label>
+                        <div class="col-md-8">
+                        <input type="text" name="inventories" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">current prepayments</label>
+                        <div class="col-md-8">
+                        <input type="text" name="current_prepayments" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">short termreceivables from sales and services</label>
+                        <div class="col-md-8">
+                        <input type="text" name="short_term_receivables_from_sales_and_services" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">short term receivables from group enterprises</label>
+                        <div class="col-md-8">
+                        <input type="text" name="short_term_receivables_from_group_enterprises" class="form-control">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">other short term receivables</label>
+                        <div class="col-md-8">
+                        <input type="text" name="other_short_term_receivables" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">short term receivables</label>
+                        <div class="col-md-8">
+                        <input type="text" name="short_term_receivables" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">current financial assets</label>
+                        <div class="col-md-8">
+                        <input type="text" name="current_financial_assets" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">cash</label>
+                        <div class="col-md-8">
+                        <input type="text" name="cash" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">current assets</label>
+                        <div class="col-md-8">
+                        <input type="text" name="current_assets" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">assets</label>
+                        <div class="col-md-8">
+                        <input type="text" name="assets" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">contributed capital</label>
+                        <div class="col-md-8">
+                        <input type="text" name="contributed_capital" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">reserves</label>
+                        <div class="col-md-8">
+                        <input type="text" name="reserves" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">dividend</label>
+                        <div class="col-md-8">
+                        <input type="text" name="dividend" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">retained earnings</label>
+                        <div class="col-md-8">
+                        <input type="text" name="retained_earnings" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">equity before minority interests</label>
+                        <div class="col-md-8">
+                        <input type="text" name="equity_before_minority_interests" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">minority interests</label>
+                        <div class="col-md-8">
+                        <input type="text" name="minority_interests" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">equity</label>
+                        <div class="col-md-8">
+                        <input type="text" name="equity" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">provisions</label>
+                        <div class="col-md-8">
+                        <input type="text" name="provisions" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">long term debt to group enterprises</label>
+                        <div class="col-md-8">
+                        <input type="text" name="long_term_debt_to_group_enterprises" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">long term debt to banks</label>
+                        <div class="col-md-8">
+                        <input type="text" name="long_term_debt_to_banks" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">long term mortgage debt</label>
+                        <div class="col-md-8">
+                        <input type="text" name="long_term_mortgage_debt" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">equity loan</label>
+                        <div class="col-md-8">
+                        <input type="text" name="equity_loan" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">deferred tax</label>
+                        <div class="col-md-8">
+                        <input type="text" name="deferred_tax" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">other long term debt</label>
+                        <div class="col-md-8">
+                        <input type="text" name="other_long_term_debt" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">long term debt</label>
+                        <div class="col-md-8">
+                        <input type="text" name="long_term_debt" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">short term debt to group enterprises</label>
+                        <div class="col-md-8">
+                        <input type="text" name="short_term_debt_to_group_enterprises" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">short term debt to banks</label>
+                        <div class="col-md-8">
+                        <input type="text" name="short_term_debt_to_banks" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">short term mortgage debt</label>
+                        <div class="col-md-8">
+                        <input type="text" name="short_term_mortgage_debt" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">short term trade payables</label>
+                        <div class="col-md-8">
+                        <input type="text" name="short_term_trade_payables" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">short term tax payables</label>
+                        <div class="col-md-8">
+                        <input type="text" name="short_term_tax_payables" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">other short term debt</label>
+                        <div class="col-md-8">
+                        <input type="text" name="other_short_term_debt" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">short term debt</label>
+                        <div class="col-md-8">
+                        <input type="text" name="short_term_debt" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">debt</label>
+                        <div class="col-md-8">
+                        <input type="text" name="debt" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">liabilities and equity</label>
+                        <div class="col-md-8">
+                        <input type="text" name="liabilities_and_equity" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">                        
+                        <div class="col-md-12 text-center">
+                        <button type="submit" class="btn btn-primary" onclick="onSubmit()">Submit</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="js/bignumber.min.js"></script>
+  <script src="js/form.js"></script>
+</body>
+</html>
