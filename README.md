@@ -1,6 +1,6 @@
 # Readme
 
-Node.js, PostgreSQL Required/
+Node.js, PostgreSQL Required
 
 ```
 npm install -g sequelize-cli
